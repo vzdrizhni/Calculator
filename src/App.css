@@ -1,0 +1,16 @@
+#calc-container {
+    width: 700px;
+}
+
+#display-container {
+    background-color: gray;
+    text-align: right;
+    height: 100px;    
+}
+
+#display-container h4 {
+    font-size: 48px;
+    color: white;
+    font-weight: 700;
+    padding: 15px 10px;
+}
