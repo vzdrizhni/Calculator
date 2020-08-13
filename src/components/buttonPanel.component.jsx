@@ -12,7 +12,7 @@ const ButtonPanel = () => {
 
     return <div>
         {buttons.map(buttonGroup => (
-            <Button buttonGroup={buttonGroup} />
+            <Button buttonGroup={buttonGroup} key={buttonGroup.toString()}/>
         ))}
     </div>
 }
