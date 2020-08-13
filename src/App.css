@@ -14,3 +14,16 @@
     font-weight: 700;
     padding: 15px 10px;
 }
+
+.button-container {
+    display: flex;
+    width: 100%;
+}
+
+.button-container > * {
+    width: 25%;
+    height: 100px;
+    color: black;
+    font-size: 36px;
+    border: 2px solid #5a5b5c;
+}
