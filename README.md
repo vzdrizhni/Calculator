@@ -29,7 +29,7 @@
   <h3 align="center">ReactJs --> [Calculator App]</h3>
 
   <p align="center">
-    This project is part of the Microverse curriculum in React module!
+    This is a calculator app built with React.
     <br />
     <a href="https://github.com/vzdrizhni//Calculator"><strong>Explore the docs »</strong></a>
     <br />
@@ -53,7 +53,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-  > to be added
+  The calculator is a simple app, that emulates a calculator and has the same functionality.
 
 ### Built With
 This project was built using these technologies.
