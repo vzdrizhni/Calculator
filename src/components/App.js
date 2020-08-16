@@ -1,26 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../App.css';
 import Display from './display.component';
 import ButtonPanel from './buttonPanel.component';
 
-class App extends Component {
-  constructor() {
-    super();
+const App = () => (
 
-    this.state = {
-      result: 0,
-    };
-  }
-
-  render() {
-    const { result } = this.state;
-    return (
-      <div id="calc-container">
-        <Display result={result} />
-        <ButtonPanel />
-      </div>
-    );
-  }
-}
+  <div id="calc-container">
+    <Display result="0" />
+    <ButtonPanel />
+  </div>
+);
 
 export default App;
