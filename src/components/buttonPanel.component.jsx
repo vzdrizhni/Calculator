@@ -14,7 +14,7 @@ const ButtonPanel = () => {
         {buttons.map((buttonGroup, index) => (
             <div key={`${index}`} className={`button-sub-group`}>
                 {buttonGroup.map((button) => (
-                    <Button button={button.name} key={button.name} wide={button.wide} color={button.color}/>
+                    <Button button={button.name} key={button.name} wide={button.wide} color={button.color} />
                 ))}
             </div>
         ))}
