@@ -1,55 +1,55 @@
 #calc-container {
-    display: flex;
-    flex-direction: column;
-    width: 700px;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
 }
 
 #display-container {
-    background-color: gray;    
-    height: 100px;
-    display: flex; 
-    justify-content: flex-end;
-    align-items: center;
+  background-color: gray;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 #display-container h4 {
-    font-size: 48px;
-    color: white;
-    font-weight: 700;
-    padding: 0 10px;
-    margin: 0; 
+  font-size: 48px;
+  color: white;
+  font-weight: 700;
+  padding: 0 10px;
+  margin: 0;
 }
 
 .button-group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .button-sub-group {
-    width: 100%;
-    height: 100px;    
+  width: 100%;
+  height: 100px;
 }
 
-.undefined-button-  {
-    width: 25%;
-    height: 100px;
-    border: 1.5px solid #4e4f4e;
-    color: black;
-    font-size: 36px;
+.undefined-button- {
+  width: 25%;
+  height: 100px;
+  border: 1.5px solid #4e4f4e;
+  color: black;
+  font-size: 36px;
 }
 
 .undefined-button-undefined {
-    background-color: orange;
-    width: 25%;
-    height: 100px;
-    color: black;
-    font-size: 36px;
+  background-color: orange;
+  width: 25%;
+  height: 100px;
+  color: black;
+  font-size: 36px;
 }
 
 .true-button- {
-    width: 50%;
-    height: 100px;
-    border: 1.5px solid #4e4f4e;
-    color: black;
-    font-size: 36px;
+  width: 50%;
+  height: 100px;
+  border: 1.5px solid #4e4f4e;
+  color: black;
+  font-size: 36px;
 }
