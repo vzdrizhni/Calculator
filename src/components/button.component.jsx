@@ -1,11 +1,12 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Button = (props) => (
-    <div className='button-container'>
-        {props.buttonGroup.map(button => (
-            <button type='button' key={button.toString()}>{button}</button>
-            ))}
-    </div>
+        <button>{props.button}</button>
 )
+
+Button.propTypes = {
+        button: PropTypes.string.isRequired
+}
 
 export default Button

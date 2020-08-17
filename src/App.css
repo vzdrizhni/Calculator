@@ -1,18 +1,23 @@
 #calc-container {
+    display: flex;
+    flex-direction: column;
     width: 700px;
 }
 
 #display-container {
-    background-color: gray;
-    text-align: right;
-    height: 100px;    
+    background-color: gray;    
+    height: 100px;
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
 }
 
 #display-container h4 {
     font-size: 48px;
     color: white;
     font-weight: 700;
-    padding: 15px 10px;
+    padding: 0 10px;
+    margin: 0; 
 }
 
 .button-container {
