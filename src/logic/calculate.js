@@ -1,8 +1,4 @@
-const calculator = {
-    total,
-    next,
-    operation
-}
+import operate from './operate'
 
 const calculate = (calculator, buttonName) => {
     let {total, next, operation} = calculator;
@@ -12,8 +8,8 @@ const calculate = (calculator, buttonName) => {
             calculator.next = next * -1;
             break;
         }
-        case '%': {
-            calculator.total = total % next;
+        case '%' || '+' || '-' || 'X' || '÷': {
+            calculator.total = operate(total, next, operation);
             break;
         }
         case 'AC': {
@@ -30,3 +26,5 @@ const calculate = (calculator, buttonName) => {
             break;
     }
 }
+
+export default calculate
