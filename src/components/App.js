@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import Display from './display.component';
 import ButtonPanel from './buttonPanel.component';
-import calculate from '../logic/calculate'; // eslint-disable-line no-unused-vars
+import calculate from '../logic/calculate';
 
 class App extends React.Component {
 
@@ -16,8 +16,8 @@ class App extends React.Component {
     }
   }
 
-  handleClick(buttonName) {
-    this.setState(calculate(this.setState, buttonName))
+  handleClick = (buttonName) => {
+    this.setState(calculate(this.state, buttonName))
   }
 
   render () {
