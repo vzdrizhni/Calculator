@@ -2,24 +2,64 @@ import operate from './operate';
 
 const calculate = (calculator, buttonName) => {
   let { total, next, operation } = calculator;
-  let nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
- 
-  function isNumber(item) {
-    return /[0-9]+/.test(item);
-  }
-  // console.log(isNumber('1'));
-  total = Number(total);
-  // next = Number(next);
+  
+  if (total === null) {
+    total = Number(total);
+  }  
+
   switch (buttonName) {
     case '+/-': {
-      total = (total * -1).toString();
-      console.log(calculator, total);
+      if (next !== null) {
+        next = (next * -1).toString();
+      } else {
+        total = (total * -1).toString();
+      }
       break;
     }   
     case '+': {
+      total = String(total);
       operation = '+';
       next = '0';      
       break;
+    }
+    case 'X': {
+      total = String(total);
+      operation = 'X';
+      next = '0';      
+      break;
+    }
+    case '-': {
+      total = String(total);
+      operation = '-';
+      next = '0';      
+      break;
+    }
+    case '÷': {
+      total = String(total);
+      operation = '÷';
+      next = '0';      
+      break;
+    }
+    case '%': {
+      total = String(total);
+      operation = '%';
+      next = '0';      
+      break;
+    }
+    case '.': {
+      total = String(total);
+      if (next !== null) {
+        if (!next.includes('.')) {
+          next = next.concat('.') .toString();
+        }        
+      } else {
+        if (!total.includes('.')) {
+          total = total + '.';
+        }        
+        console.log(calculator);
+      }
+      break;
+      console.log(total, next);
     }
     case 'AC': {
       total = null;
@@ -28,9 +68,10 @@ const calculate = (calculator, buttonName) => {
       break;
     }
     case '=': {
-      total = operate(total, next, operation).toString();
-      // console.log(typeof total === 'string');
-      next = null;
+      if (operation !== null) {
+        total = operate(total, next, operation).toString();
+        next = null;
+      }      
       break;
     }
     case '1' : 
@@ -43,10 +84,14 @@ const calculate = (calculator, buttonName) => {
     case '8' :
     case '9' :
     case '0' : {
-      if (next === null) {total = (total + buttonName).toString()};
+      if (next === null || typeof total === 'string') {
+        total = (total + buttonName).toString();
+        console.log(total);
+      };
+      console.log(typeof total === 'string');
       if (next !== null) {next = (next + buttonName).toString()};
       if (operation !== null && next === null) {
-        total = null; 
+        total = buttonName; 
         next = null; 
         operation = null;
       };

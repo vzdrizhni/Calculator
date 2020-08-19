@@ -7,7 +7,11 @@ const operate = (numberOne, numberTwo, operation) => {
 
   switch (operation) {
     case '÷': {
-      total = num1.div(num2);
+      if (num2 == 0) {
+        total = 0; 
+      } else {
+        total = num1.div(num2);
+      }      
       break;
     }
     case 'X': {
@@ -27,9 +31,10 @@ const operate = (numberOne, numberTwo, operation) => {
       break;
     }
     default:
+      total = 0;
       break;
   }
-  return total;
+  return total.toString();
 };
 
 export default operate;
