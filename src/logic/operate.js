@@ -7,11 +7,11 @@ const operate = (numberOne, numberTwo, operation) => {
 
   switch (operation) {
     case '÷': {
-      if (num2 == 0) {
-        total = 0; 
+      if (num2 == 0) { // eslint-disable-line eqeqeq
+        total = 0;
       } else {
         total = num1.div(num2);
-      }      
+      }
       break;
     }
     case 'X': {
