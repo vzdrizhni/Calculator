@@ -68,7 +68,7 @@ const calculate = (calculator, buttonName) => {
       break;
     }
     case '=': {
-      if (operation !== null) {
+      if (operation !== null && next !== null) {
         total = operate(total, next, operation).toString();
         next = null;
       }      
