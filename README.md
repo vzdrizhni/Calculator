@@ -55,6 +55,8 @@
 ## About The Project
   The calculator is a simple app, that emulates a calculator and has the same functionality.
 
+![screenshot-1](src/assets/titleScreen.PNG)
+
 ### Built With
 This project was built using these technologies.
 * HTML/CSS
