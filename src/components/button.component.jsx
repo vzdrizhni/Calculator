@@ -7,7 +7,6 @@ const Button = (props) => {
 
         const handleClick = () => {
                 props.clickHandler(props.button);
-                console.log(props.button);
         }
 
         return(

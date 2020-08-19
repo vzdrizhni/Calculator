@@ -8,23 +8,22 @@ const operate = (numberOne, numberTwo, operation) => {
   switch (operation) {
     case '÷': {
       total = num1.div(num2);
-      return total;
+      break;
     }
     case 'X': {
       total = num1.times(num2);
-      return total;
     }
     case '-': {
       total = num1.minus(num2);
-      return total;
+      break;
     }
     case '+': {
       total = num1.plus(num2);
-      return total;
+      break;
     }
     case '%': {
       total = num1.mod(num2);
-      return total;
+      break;
     }
     default:
       break;
