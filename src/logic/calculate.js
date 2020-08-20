@@ -80,7 +80,7 @@ const calculate = (calculator, buttonName) => {
     case '8':
     case '9':
     case '0': {
-      if (next === null || typeof total === 'string') {
+      if (next === null) {
         total = (total + buttonName).toString();
       }
       if (next !== null) { next = (next + buttonName).toString(); }
