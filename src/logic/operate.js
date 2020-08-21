@@ -7,29 +7,34 @@ const operate = (numberOne, numberTwo, operation) => {
 
   switch (operation) {
     case '÷': {
-      total = num1.div(num2);
-      return total;
+      if (num2 == 0) { // eslint-disable-line eqeqeq
+        total = 0;
+      } else {
+        total = num1.div(num2);
+      }
+      break;
     }
     case 'X': {
       total = num1.times(num2);
-      return total;
+      break;
     }
     case '-': {
       total = num1.minus(num2);
-      return total;
+      break;
     }
     case '+': {
       total = num1.plus(num2);
-      return total;
+      break;
     }
     case '%': {
       total = num1.mod(num2);
-      return total;
+      break;
     }
     default:
+      total = 0;
       break;
   }
-  return total;
+  return total.toString();
 };
 
 export default operate;
